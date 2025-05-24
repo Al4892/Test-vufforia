@@ -6,4 +6,5 @@ public class SoundData : ScriptableObject
     public string MusiName;
     public string AnimationName;
     public TextAsset notesConfig;
+    public float Speed;
 }
