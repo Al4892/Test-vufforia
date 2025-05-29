@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MusiName: Tec
   AnimationName: Techonologicd
-  notesConfig: {fileID: 0}
+  notesConfig: {fileID: 4900000, guid: 6368b6e2b61cc654880110dcdf1b21bb, type: 3}
+  Speed: 0
