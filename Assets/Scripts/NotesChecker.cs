@@ -6,6 +6,10 @@ public class NotesChecker : MonoBehaviour
 {
     [SerializeField]
     private UnityEvent onButtonPressed;
+    [SerializeField]
+    private UnityEvent onCorrectNote;
+    [SerializeField]
+    private UnityEvent onFailNote;
     private List<GameObject> notes = new List<GameObject>();
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,6 +30,14 @@ public class NotesChecker : MonoBehaviour
 
     public void DestroyedNotes()
     {
+        if (notes.Count > 0)
+        {
+            onCorrectNote?.Invoke();
+        }
+        else
+        {
+            onFailNote?.Invoke();
+        }
         onButtonPressed?.Invoke();
         while (notes.Count > 0)
         {
