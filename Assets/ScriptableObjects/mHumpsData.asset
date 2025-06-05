@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MusiName: Humps
   AnimationName: myHumps
-  notesConfig: {fileID: 4900000, guid: 4e307f7e9ac41d340b4f4867f7665319, type: 3}
+  notesConfig: {fileID: 4900000, guid: 6368b6e2b61cc654880110dcdf1b21bb, type: 3}
   Speed: 112.71
